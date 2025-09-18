@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><u>Cognifyz Internship</u></h1>
+    <p>Welcome to the Cognifyz internship program page. Here you can find information about our internship opportunities, application process, and more.</p>
+    <div id="hero-img" style="border-radius: 40px; padding: 20px">
+        <img src="cognifyz.jpeg" alt="cognifyz logo" style="border-radius: 40px;">
+    </div>
+     <form id="userForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <span class="error" id="nameError"></span>
+
+        <label for="email"><br><br>Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span>
+
+        <label for="age"><br><br>Age:</label><br>
+        <input type="number" id="age" name="age" min="1" required>
+        <span class="error" id="ageError"></span>
+
+        <label for="password"><br><br>Password:</label><br>
+        <input type="password" id="password" name="password"
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{6,14}$"
+        title="Password must be 6-14 characters and include uppercase, lowercase, number, and special character."required>
+        <span class="error" id="passwordError"></span>
+
+         <label for="password"><br><br> Confirm Password:</label><br>
+        <input type="password" id="CNFpassword" name="password"
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{6,14}$"
+        title="Password must be 6-14 characters and include uppercase, lowercase, number, and special character."required>
+        <span class="error" id="passwordError"></span><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <button id="Click">Click me to change background color</button>
+    <button id="api">Click to Fetch data from API</button>
+    <script src="script.js"></script>
+</body>
+</html>
