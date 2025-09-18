@@ -1,0 +1,64 @@
+ body{
+font-family: Arial, Helvetica, sans-serif;
+margin: 20px;
+background-color: lightblue;
+p{
+    font-size: 22px;
+}
+}
+@media(min-width:400px) and (max-width:800px){
+    body{
+        background-color: white;
+    }
+}
+button{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+form {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    height: 18px;
+}
+#hero-img{
+    padding: 40px !important;
+
+    img{
+    padding: 20px !important;
+    background-color: white;
+
+    }
+}
